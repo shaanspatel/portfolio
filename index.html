@@ -3,196 +3,108 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Shaan Patel | Project Portfolio</title>
+    <title>Shaan Patel | Robotics Project Hub</title>
     <meta
       name="description"
-      content="Shaan Patel project portfolio featuring robotics, research, CAD, and automation projects."
+      content="Shaan Patel robotics and mechanical engineering project hub for CAD, prototyping, fabrication, testing, and research case studies."
     >
-    <link rel="stylesheet" href="styles.css?v=20260511-3">
+    <link rel="stylesheet" href="styles.css?v=20260513-1">
   </head>
-  <body>
-    <header class="site-header" data-header>
+  <body class="home-page">
+    <header class="site-header dark-header" data-header>
       <a class="brand" href="#top" aria-label="Shaan Patel home">
         <span>Shaan Patel</span>
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#robotic-arm">6-DOF Arm</a>
-        <a href="#sf-motors">SF Motors</a>
-        <a href="#omni-lab">OH-MIND Lab</a>
-        <a href="#lerobot">LeRobot</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main id="top">
-      <section class="intro" aria-labelledby="intro-title">
+      <section class="intro intro-dark" aria-labelledby="intro-title">
         <div class="intro-copy">
-          <p class="intro-label">Robotics / mechanical systems / automation</p>
-          <h1 id="intro-title">Shaan Patel</h1>
-          <p>Project Portfolio</p>
+          <p class="intro-label">Mechanical engineering / robotics / prototyping</p>
+          <h1 id="intro-title">Engineering project journal</h1>
+          <p>
+            A project hub for robotics hardware, CAD, fabrication, testing, and
+            research work toward Summer 2026 mechanical engineering and robotics
+            internships.
+          </p>
         </div>
-        <a class="intro-cta" href="#projects">Explore work <span aria-hidden="true">-&gt;</span></a>
+        <a class="intro-cta" href="#projects">View projects <span aria-hidden="true">-&gt;</span></a>
       </section>
 
-      <section class="project-menu" id="projects" aria-labelledby="project-menu-title">
-        <div class="section-kicker">Projects</div>
-        <h2 id="project-menu-title">Select a project</h2>
-        <div class="button-grid">
-          <a class="project-button" href="#robotic-arm">
-            <span>01</span>
-            <strong>6-DOF robotic arm</strong>
-            <em>CAD, calculations, cycloidal drive</em>
-          </a>
-          <a class="project-button" href="#sf-motors">
-            <span>02</span>
-            <strong>SF Motors</strong>
-            <em>Robotic hand prototype</em>
-          </a>
-          <a class="project-button" href="#omni-lab">
-            <span>03</span>
-            <strong>OMNI Lab research</strong>
-            <em>IDETC 2026 submission</em>
-          </a>
-          <a class="project-button" href="#lerobot">
-            <span>04</span>
-            <strong>LeRobot hackathon</strong>
-            <em>#1 US, #2 worldwide</em>
-          </a>
+      <section class="project-hub" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="section-kicker">Project hub</p>
+          <h2 id="projects-title">Case-study pages</h2>
+          <p>
+            Four project deep dives organized as engineering notes. Each page is
+            ready for measured results, CAD details, manufacturing notes, and
+            iteration history as the writing is filled in.
+          </p>
         </div>
-      </section>
 
-      <section class="project-section robotic-arm" id="robotic-arm" aria-labelledby="robotic-arm-title">
-        <div class="project-title">
-          <p class="section-kicker">Personal Project</p>
-          <h2 id="robotic-arm-title">6-DOF robotic arm</h2>
-          <p>Exploring joint architecture, calculations, and custom drive components for a robotic arm system.</p>
-        </div>
-        <div class="robotic-layout">
-          <figure class="media-card wide">
-            <img src="assets/robotic-arm-calculations.png" alt="CAD sketch and calculations for the robotic arm">
-            <figcaption>
-              <a
-                href="https://docs.google.com/spreadsheets/d/1levbSlnXuszqrpdhDj6p4WWyz2x23Eg3GXdmPVdkNsU/edit?usp=sharing"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Sheet with all the calculations
-              </a>
-            </figcaption>
-          </figure>
-          <figure class="media-card">
-            <img src="assets/robotic-arm-dof.png" alt="CAD model showing robotic arm degrees of freedom">
-            <figcaption>Degrees of Freedom 1 and 2</figcaption>
-          </figure>
-          <figure class="media-card disk">
-            <img src="assets/cycloidal-disk.png" alt="Custom cycloidal disk model">
-            <figcaption>Custom cycloidal disk made with Python script</figcaption>
-          </figure>
-        </div>
-        <div class="section-actions">
-          <a class="button" href="#sf-motors">SF Motors <span aria-hidden="true">-&gt;</span></a>
-          <a class="button secondary" href="#projects">All projects</a>
-        </div>
-      </section>
-
-      <section class="project-section sf-motors" id="sf-motors" aria-labelledby="sf-motors-title">
-        <div class="sf-grid">
-          <div class="sf-heading">
-            <p class="section-kicker">Mechanical Design</p>
-            <h2 id="sf-motors-title">SF Motors</h2>
-            <p>Prototype studies for a tendon-driven robotic hand, including machined plates, finger assemblies, and CAD validation.</p>
-          </div>
-          <figure class="sf-tile fingers">
-            <img src="assets/sf-motors-fingers.png" alt="Robotic hand finger prototypes">
-          </figure>
-          <figure class="sf-tile parts">
-            <img src="assets/sf-motors-parts.png" alt="Machined parts and bearings for the hand mechanism">
-          </figure>
-          <figure class="sf-tile plate">
-            <img src="assets/sf-motors-plate.png" alt="Machined hand plate with multiple mounted disks">
-          </figure>
-          <figure class="sf-tile prototype">
-            <img src="assets/sf-motors-prototype.png" alt="Robotic hand prototype on a workbench">
-          </figure>
-          <figure class="sf-tile cad">
-            <img src="assets/sf-motors-cad.png" alt="CAD assembly of a robotic hand">
-          </figure>
-        </div>
-        <div class="section-actions">
-          <a class="button" href="#omni-lab">OMNI Lab <span aria-hidden="true">-&gt;</span></a>
-          <a class="button secondary" href="#robotic-arm">Previous</a>
-        </div>
-      </section>
-
-      <section class="project-section omni-lab" id="omni-lab" aria-labelledby="omni-lab-title">
-        <div class="omni-layout">
-          <div class="omni-heading">
-            <p class="section-kicker">Research Project</p>
-            <h2 id="omni-lab-title">OH-MIND Lab</h2>
-            <p>Research visuals from the IDETC 2026 submission, moving from simulation to prototype setup and validation.</p>
-          </div>
-          <div class="research-board">
-            <figure class="research-figure research-figure-wide">
-              <img
-                src="assets/Screenshot from 2026-03-08 20-06-47.png"
-                alt="Simulation screenshot for OMNI Lab research"
-              >
-              <figcaption>Simulation environment</figcaption>
+        <div class="project-card-grid">
+          <a class="project-card" href="projects/sf-motors.html">
+            <figure>
+              <img src="assets/sf-motors-prototype.png" alt="Prototype of a tendon-driven robotic hand on a workbench">
             </figure>
-            <figure class="research-figure">
-              <img src="assets/IMG_1234.jpg" alt="OMNI Lab prototype setup">
-              <figcaption>Prototype setup</figcaption>
-            </figure>
-            <figure class="research-figure">
-              <img src="assets/snapshot00_L00.png" alt="Research snapshot from OMNI Lab system validation">
-              <figcaption>Validation snapshot</figcaption>
-            </figure>
-            <strong>Accepted to IDETC 2026</strong>
-          </div>
-        </div>
-        <div class="section-actions">
-          <a class="button" href="#lerobot">LeRobot <span aria-hidden="true">-&gt;</span></a>
-          <a class="button secondary" href="#sf-motors">Previous</a>
-        </div>
-      </section>
+            <div class="project-card-copy">
+              <span class="project-index">01</span>
+              <h3>SF Motors / tendon-driven robotic hand</h3>
+              <p>Robotic hand mechanism notes covering finger assemblies, CAD, parts, plates, and prototype validation.</p>
+              <span class="project-card-link">Open case study <span aria-hidden="true">-&gt;</span></span>
+            </div>
+          </a>
 
-      <section class="project-section lerobot" id="lerobot" aria-labelledby="lerobot-title">
-        <div class="split-copy">
-          <div>
-            <p class="section-kicker">Hackathon</p>
-            <h2 id="lerobot-title">LeRobot HuggingFace Hackathon</h2>
-            <p class="rank">#1 in the United States, #2 worldwide</p>
-            <p>
-              We taught the LeRobot SO100 arm to autonomously perform everyday
-              tasks, specifically folding shirts and sorting medicine into
-              medicine boxes.
-            </p>
-          </div>
-          <div class="lerobot-photos">
+          <a class="project-card" href="projects/robotic-arm.html">
+            <figure>
+              <img src="assets/robotic-arm-dof.png" alt="CAD model showing degrees of freedom for a robotic arm">
+            </figure>
+            <div class="project-card-copy">
+              <span class="project-index">02</span>
+              <h3>6-DOF robotic arm</h3>
+              <p>Joint architecture, calculations, and cycloidal-drive exploration for a robotic arm system.</p>
+              <span class="project-card-link">Open case study <span aria-hidden="true">-&gt;</span></span>
+            </div>
+          </a>
+
+          <a class="project-card" href="projects/omni-lab.html">
+            <figure>
+              <img src="assets/IMG_1234.jpg" alt="OH-MIND Lab prototype setup">
+            </figure>
+            <div class="project-card-copy">
+              <span class="project-index">03</span>
+              <h3>OH-MIND Lab research</h3>
+              <p>Research-page structure for simulation visuals, prototype documentation, and validation notes.</p>
+              <span class="project-card-link">Open case study <span aria-hidden="true">-&gt;</span></span>
+            </div>
+          </a>
+
+          <a class="project-card" href="projects/lerobot-hackathon.html">
             <figure>
               <img src="assets/IMG_9678.jpg" alt="LeRobot hackathon robot arm workspace">
-              <figcaption>SO100 arm setup</figcaption>
             </figure>
-            <figure>
-              <img src="assets/IMG_9701.jpg" alt="Shaan at the LeRobot HuggingFace hackathon">
-              <figcaption>Hackathon result</figcaption>
-            </figure>
-          </div>
-        </div>
-        <div class="section-actions">
-          <a class="button" href="#contact">Contact <span aria-hidden="true">-&gt;</span></a>
-          <a class="button secondary" href="#omni-lab">Previous</a>
+            <div class="project-card-copy">
+              <span class="project-index">04</span>
+              <h3>LeRobot hackathon</h3>
+              <p>Hackathon project notes for robot task demonstrations, testing, iteration, and lessons learned.</p>
+              <span class="project-card-link">Open case study <span aria-hidden="true">-&gt;</span></span>
+            </div>
+          </a>
         </div>
       </section>
 
       <section class="contact-section" id="contact" aria-labelledby="contact-title">
-        <div class="split-copy">
+        <div class="contact-grid">
           <div>
             <p class="section-kicker">Contact</p>
-            <h2 id="contact-title">Let’s build something useful.</h2>
+            <h2 id="contact-title">Robotics, hardware, and mechanical design opportunities.</h2>
             <p>
-              I’m open to robotics, mechanical design, research, and product
-              engineering opportunities.
+              I am interested in internship work involving robotic mechanisms,
+              CAD, prototyping, manufacturing, testing, and practical automation.
             </p>
           </div>
           <div class="contact-links" aria-label="Contact links">
@@ -200,16 +112,12 @@
             <a href="https://www.linkedin.com/in/shaan-patel-278252281/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">-&gt;</span></a>
           </div>
         </div>
-        <div class="section-actions">
-          <a class="button" href="#projects">All projects <span aria-hidden="true">-&gt;</span></a>
-          <a class="button secondary" href="#top">Back to top</a>
-        </div>
       </section>
     </main>
 
     <footer>
       <p>&copy; 2026 Shaan Patel</p>
-      <a href="#contact">Contact</a>
+      <a href="#top">Back to top</a>
     </footer>
 
     <script src="script.js?v=20260504-1"></script>
