@@ -3,14 +3,33 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Shaan Patel | Robotics Project Hub</title>
+    <title>Shaan Patel | Robotics and Mechanical Engineering Portfolio</title>
     <meta
       name="description"
-      content="Shaan Patel robotics and mechanical engineering project hub for CAD, prototyping, fabrication, testing, and research case studies."
+      content="Robotics and mechanical engineering portfolio for Summer 2026 internships, featuring tendon-driven hand design, 6-DOF robotic arm CAD, lab research, and robot hardware integration."
     >
+    <meta name="author" content="Shaan Patel">
+    <meta property="og:title" content="Shaan Patel Robotics and Mechanical Engineering Portfolio">
+    <meta
+      property="og:description"
+      content="Project journal for robotics hardware, CAD, prototyping, manufacturing, testing, and robot mechanisms."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Shaan Patel Portfolio">
+    <meta property="og:image" content="assets/sf-motors-prototype.png">
+    <meta property="og:image:alt" content="Tendon-driven robotic hand prototype on a workbench">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Shaan Patel Robotics and Mechanical Engineering Portfolio">
+    <meta
+      name="twitter:description"
+      content="Robotics hardware, CAD, prototyping, testing, and project case studies for mechanical engineering internships."
+    >
+    <meta name="twitter:image" content="assets/sf-motors-prototype.png">
+    <meta name="twitter:image:alt" content="Tendon-driven robotic hand prototype on a workbench">
     <link rel="stylesheet" href="styles.css?v=20260513-1">
   </head>
   <body class="home-page">
+    <a class="skip-link" href="index.html#projects">Skip to projects</a>
     <header class="site-header dark-header" data-header>
       <a class="brand" href="#top" aria-label="Shaan Patel home">
         <span>Shaan Patel</span>
@@ -35,7 +54,7 @@
         <a class="intro-cta" href="#projects">View projects <span aria-hidden="true">-&gt;</span></a>
       </section>
 
-      <section class="project-hub" id="projects" aria-labelledby="projects-title">
+      <section class="project-hub" id="projects" tabindex="-1" aria-labelledby="projects-title">
         <div class="section-heading">
           <p class="section-kicker">Project hub</p>
           <h2 id="projects-title">Case-study pages</h2>
@@ -47,50 +66,90 @@
         </div>
 
         <div class="project-card-grid">
-          <a class="project-card" href="projects/sf-motors.html">
+          <a
+            class="project-card"
+            href="projects/sf-motors.html"
+            aria-labelledby="sf-motors-card-title"
+            aria-describedby="sf-motors-card-summary"
+          >
             <figure>
-              <img src="assets/sf-motors-prototype.png" alt="Prototype of a tendon-driven robotic hand on a workbench">
+              <img
+                src="assets/sf-motors-prototype.png"
+                alt="Tendon-driven robotic hand prototype on a workbench"
+                loading="lazy"
+                decoding="async"
+              >
             </figure>
             <div class="project-card-copy">
               <span class="project-index">01</span>
-              <h3>SF Motors / tendon-driven robotic hand</h3>
-              <p>Robotic hand mechanism notes covering finger assemblies, CAD, parts, plates, and prototype validation.</p>
+              <h3 id="sf-motors-card-title">SF Motors / tendon-driven robotic hand</h3>
+              <p id="sf-motors-card-summary">Robotic hand mechanism notes covering finger assemblies, CAD, parts, plates, and prototype validation.</p>
               <span class="project-card-link">Open case study <span aria-hidden="true">-&gt;</span></span>
             </div>
           </a>
 
-          <a class="project-card" href="projects/robotic-arm.html">
+          <a
+            class="project-card"
+            href="projects/robotic-arm.html"
+            aria-labelledby="robotic-arm-card-title"
+            aria-describedby="robotic-arm-card-summary"
+          >
             <figure>
-              <img src="assets/robotic-arm-dof.png" alt="CAD model showing degrees of freedom for a robotic arm">
+              <img
+                src="assets/robotic-arm-dof.png"
+                alt="CAD model showing the degree-of-freedom layout for a robotic arm"
+                loading="lazy"
+                decoding="async"
+              >
             </figure>
             <div class="project-card-copy">
               <span class="project-index">02</span>
-              <h3>6-DOF robotic arm</h3>
-              <p>Joint architecture, calculations, and cycloidal-drive exploration for a robotic arm system.</p>
+              <h3 id="robotic-arm-card-title">6-DOF robotic arm</h3>
+              <p id="robotic-arm-card-summary">Joint architecture, calculations, and cycloidal-drive exploration for a robotic arm system.</p>
               <span class="project-card-link">Open case study <span aria-hidden="true">-&gt;</span></span>
             </div>
           </a>
 
-          <a class="project-card" href="projects/omni-lab.html">
+          <a
+            class="project-card"
+            href="projects/omni-lab.html"
+            aria-labelledby="omni-lab-card-title"
+            aria-describedby="omni-lab-card-summary"
+          >
             <figure>
-              <img src="assets/IMG_1234.jpg" alt="OH-MIND Lab prototype setup">
+              <img
+                src="assets/IMG_1234.jpg"
+                alt="Robot workcell prototype setup for OH-MIND Lab research"
+                loading="lazy"
+                decoding="async"
+              >
             </figure>
             <div class="project-card-copy">
               <span class="project-index">03</span>
-              <h3>OH-MIND Lab research</h3>
-              <p>Research case study connecting simulation visuals, prototype setup, validation snapshots, and research documentation.</p>
+              <h3 id="omni-lab-card-title">OH-MIND Lab research</h3>
+              <p id="omni-lab-card-summary">Research case study connecting simulation visuals, prototype setup, validation snapshots, and research documentation.</p>
               <span class="project-card-link">Open case study <span aria-hidden="true">-&gt;</span></span>
             </div>
           </a>
 
-          <a class="project-card" href="projects/lerobot-hackathon.html">
+          <a
+            class="project-card"
+            href="projects/lerobot-hackathon.html"
+            aria-labelledby="lerobot-card-title"
+            aria-describedby="lerobot-card-summary"
+          >
             <figure>
-              <img src="assets/IMG_9678.jpg" alt="LeRobot hackathon robot arm workspace">
+              <img
+                src="assets/IMG_9678.jpg"
+                alt="Robot arm workspace used for a LeRobot hackathon task setup"
+                loading="lazy"
+                decoding="async"
+              >
             </figure>
             <div class="project-card-copy">
               <span class="project-index">04</span>
-              <h3>LeRobot hackathon</h3>
-              <p>Robot learning integration notes covering task setup, hardware testing, iteration, and demo constraints.</p>
+              <h3 id="lerobot-card-title">LeRobot hackathon</h3>
+              <p id="lerobot-card-summary">Robot learning integration notes covering task setup, hardware testing, iteration, and demo constraints.</p>
               <span class="project-card-link">Open case study <span aria-hidden="true">-&gt;</span></span>
             </div>
           </a>
@@ -108,8 +167,13 @@
             </p>
           </div>
           <div class="contact-links" aria-label="Contact links">
-            <a href="mailto:patel.shaan@gmail.com">Email <span aria-hidden="true">-&gt;</span></a>
-            <a href="https://www.linkedin.com/in/shaan-patel-278252281/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">-&gt;</span></a>
+            <a href="mailto:patel.shaan@gmail.com" aria-label="Email Shaan Patel">Email <span aria-hidden="true">-&gt;</span></a>
+            <a
+              href="https://www.linkedin.com/in/shaan-patel-278252281/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Shaan Patel on LinkedIn, opens in a new tab"
+            >LinkedIn <span aria-hidden="true">-&gt;</span></a>
           </div>
         </div>
       </section>
