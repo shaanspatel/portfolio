@@ -48,13 +48,43 @@ a {
 }
 
 a:focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 3px solid var(--accent);
   outline-offset: 4px;
+}
+
+[tabindex="-1"]:focus {
+  outline: none;
+}
+
+#projects,
+#case-content {
+  scroll-margin-top: 84px;
 }
 
 img {
   display: block;
   max-width: 100%;
+}
+
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: clamp(16px, 4vw, 32px);
+  z-index: 100;
+  transform: translateY(-160%);
+  border: 2px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  color: var(--ink);
+  background: var(--paper);
+  box-shadow: var(--shadow-soft);
+  font-size: 0.9rem;
+  font-weight: 780;
+  text-decoration: none;
+}
+
+.skip-link:focus-visible {
+  transform: translateY(0);
 }
 
 .site-header {

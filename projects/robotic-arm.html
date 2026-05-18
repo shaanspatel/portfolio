@@ -3,17 +3,36 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>6-DOF Robotic Arm | Shaan Patel</title>
+    <title>6-DOF Robotic Arm Case Study | Shaan Patel</title>
     <meta
       name="description"
-      content="Case study for Shaan Patel's 6-DOF robotic arm design study, covering CAD, engineering calculations, and cycloidal-drive exploration."
+      content="Case study for Shaan Patel's 6-DOF robotic arm design study, covering mechanical architecture, CAD, engineering calculations, and cycloidal-drive exploration."
     >
+    <meta name="author" content="Shaan Patel">
+    <meta property="og:title" content="6-DOF Robotic Arm Case Study">
+    <meta
+      property="og:description"
+      content="Mechanical design study covering robotic arm joint architecture, CAD, reach and geometry calculations, and cycloidal-drive exploration."
+    >
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Shaan Patel Portfolio">
+    <meta property="og:image" content="../assets/robotic-arm-dof.png">
+    <meta property="og:image:alt" content="CAD view of a 6-DOF robotic arm degree-of-freedom layout">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="6-DOF Robotic Arm Case Study">
+    <meta
+      name="twitter:description"
+      content="Robotics mechanical design case study covering arm architecture, calculations, CAD, and cycloidal-drive exploration."
+    >
+    <meta name="twitter:image" content="../assets/robotic-arm-dof.png">
+    <meta name="twitter:image:alt" content="CAD view of a 6-DOF robotic arm degree-of-freedom layout">
     <link rel="stylesheet" href="../styles.css?v=20260513-1">
   </head>
   <body class="case-page">
+    <a class="skip-link" href="#case-content">Skip to case study</a>
     <header class="case-header">
       <nav class="case-nav" aria-label="Project navigation">
-        <a class="brand" href="../index.html">Shaan Patel</a>
+        <a class="brand" href="../index.html" aria-label="Shaan Patel home">Shaan Patel</a>
         <a class="back-link" href="../index.html#projects">Back to project hub</a>
       </nav>
 
@@ -52,14 +71,18 @@
       </dl>
     </header>
 
-    <section class="case-hero" aria-label="Project hero image">
+    <section class="case-hero" aria-label="6-DOF robotic arm project hero image">
       <figure>
-        <img src="../assets/robotic-arm-dof.png" alt="CAD model showing robotic arm degrees of freedom">
+        <img
+          src="../assets/robotic-arm-dof.png"
+          alt="CAD model showing the degree-of-freedom layout for a 6-DOF robotic arm"
+          decoding="async"
+        >
         <figcaption>Degrees of freedom reference image</figcaption>
       </figure>
     </section>
 
-    <main class="case-content">
+    <main class="case-content" id="case-content" tabindex="-1">
       <section class="case-section" aria-labelledby="overview-title">
         <h2 id="overview-title">Overview</h2>
         <p>This project is a 6-DOF robotic arm design study focused on the early mechanical decisions that define the rest of the system: joint layout, link geometry, drive packaging, and manufacturability. The project documentation includes a degree-of-freedom CAD view, a calculation sketch, and a custom cycloidal disk model.</p>
@@ -116,15 +139,30 @@
           <p class="gallery-note">Reference images documenting arm geometry calculations, degree-of-freedom planning, and the custom cycloidal disk exploration.</p>
           <div class="gallery-grid">
             <figure class="gallery-item">
-              <img src="../assets/robotic-arm-calculations.png" alt="Robotic arm calculation sheet screenshot">
+              <img
+                src="../assets/robotic-arm-calculations.png"
+                alt="Calculation sheet for robotic arm link geometry and joint checks"
+                loading="lazy"
+                decoding="async"
+              >
               <figcaption>Calculations</figcaption>
             </figure>
             <figure class="gallery-item">
-              <img src="../assets/robotic-arm-dof.png" alt="Robotic arm degrees of freedom CAD image">
+              <img
+                src="../assets/robotic-arm-dof.png"
+                alt="CAD view showing the robotic arm degree-of-freedom layout"
+                loading="lazy"
+                decoding="async"
+              >
               <figcaption>Degrees of freedom</figcaption>
             </figure>
             <figure class="gallery-item">
-              <img src="../assets/cycloidal-disk.png" alt="Custom cycloidal disk model">
+              <img
+                src="../assets/cycloidal-disk.png"
+                alt="CAD model of a custom cycloidal disk for drive exploration"
+                loading="lazy"
+                decoding="async"
+              >
               <figcaption>Cycloidal disk</figcaption>
             </figure>
           </div>
