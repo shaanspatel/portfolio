@@ -1,13 +1,15 @@
-# Shaan Patel Project Portfolio
+# Shaan Patel Robotics Project Portfolio
 
-A static portfolio site built from the Figma project deck structure.
+A static robotics and mechanical engineering portfolio built as a project hub
+with separate case-study pages.
 
 ## Edit Content
 
-- Update project copy in `index.html`.
+- Update project tile copy in `index.html`.
+- Add project writeups in the files under `projects/`.
 - Replace or add project images in `assets/`.
-- Project buttons link to section IDs such as `#robotic-arm`, `#sf-motors`, `#omni-lab`, and `#lerobot`.
-- Update the placeholder email, LinkedIn, and GitHub links in the `#contact` section.
+- Project cards link to standalone pages such as `projects/sf-motors.html`.
+- Update the email and LinkedIn links in the `#contact` section.
 
 ## Run Locally
 
