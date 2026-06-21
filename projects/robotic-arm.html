@@ -3,33 +3,33 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>6-DOF Robotic Arm Case Study | Shaan Patel</title>
+    <title>6-DOF Robotic Arm Project Notes | Shaan Patel</title>
     <meta
       name="description"
-      content="Case study for Shaan Patel's 6-DOF robotic arm design study, covering mechanical architecture, CAD, engineering calculations, and cycloidal-drive exploration."
+      content="Project notes for Shaan Patel's in-progress 6-DOF robotic arm, currently documenting mechanical design, CAD, joint architecture, torque calculations, drivetrain exploration, and packaging."
     >
     <meta name="author" content="Shaan Patel">
-    <meta property="og:title" content="6-DOF Robotic Arm Case Study">
+    <meta property="og:title" content="6-DOF Robotic Arm Project Notes">
     <meta
       property="og:description"
-      content="Mechanical design study covering robotic arm joint architecture, CAD, reach and geometry calculations, and cycloidal-drive exploration."
+      content="In-progress robotic arm project notes covering mechanical design, joint architecture, CAD, preliminary calculations, drivetrain exploration, and packaging."
     >
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Shaan Patel Portfolio">
     <meta property="og:image" content="../assets/robotic-arm-dof.png">
     <meta property="og:image:alt" content="CAD view of a 6-DOF robotic arm degree-of-freedom layout">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="6-DOF Robotic Arm Case Study">
+    <meta name="twitter:title" content="6-DOF Robotic Arm Project Notes">
     <meta
       name="twitter:description"
-      content="Robotics mechanical design case study covering arm architecture, calculations, CAD, and cycloidal-drive exploration."
+      content="Mechanical design project notes for an in-progress 6-DOF robotic arm."
     >
     <meta name="twitter:image" content="../assets/robotic-arm-dof.png">
     <meta name="twitter:image:alt" content="CAD view of a 6-DOF robotic arm degree-of-freedom layout">
     <link rel="stylesheet" href="../styles.css?v=20260513-1">
   </head>
-  <body class="case-page">
-    <a class="skip-link" href="#case-content">Skip to case study</a>
+  <body class="case-page project-notes-page">
+    <a class="skip-link" href="#case-content">Skip to project notes</a>
     <header class="case-header">
       <nav class="case-nav" aria-label="Project navigation">
         <a class="brand" href="../index.html" aria-label="Shaan Patel home">Shaan Patel</a>
@@ -38,35 +38,36 @@
 
       <div class="case-title">
         <div>
-          <p class="intro-label">Project case study</p>
+          <p class="intro-label">Project documentation</p>
           <h1>6-DOF robotic arm</h1>
         </div>
         <p class="case-summary">
-          6-DOF robotic arm design study focused on joint architecture, reach
-          and geometry calculations, and custom cycloidal-drive exploration.
+          An end-to-end robotic arm project in progress, currently documented
+          through the mechanical design phase: CAD, joint architecture,
+          preliminary torque calculations, drivetrain exploration, and packaging.
         </p>
       </div>
 
-      <dl class="project-meta">
+      <dl class="project-meta project-snapshot">
         <div>
           <dt>Role</dt>
-          <dd>Mechanical design and analysis</dd>
+          <dd>Mechanical design, CAD, and preliminary analysis</dd>
         </div>
         <div>
-          <dt>Timeline</dt>
-          <dd>Design study timeline available on request</dd>
+          <dt>Phase</dt>
+          <dd>Mechanical design documentation</dd>
         </div>
         <div>
           <dt>Tools</dt>
-          <dd>CAD, hand calculations, cycloidal-drive modeling</dd>
+          <dd>CAD, hand calculations, drivetrain concept modeling</dd>
         </div>
         <div>
           <dt>Status</dt>
-          <dd>CAD and calculation-stage exploration</dd>
+          <dd>In progress; not yet physically validated</dd>
         </div>
         <div>
           <dt>Focus Areas</dt>
-          <dd>Robot arm architecture, calculations, CAD, drive exploration</dd>
+          <dd>Joint layout, torque paths, packaging, manufacturability</dd>
         </div>
       </dl>
     </header>
@@ -78,74 +79,68 @@
           alt="CAD model showing the degree-of-freedom layout for a 6-DOF robotic arm"
           decoding="async"
         >
-        <figcaption>Degrees of freedom reference image</figcaption>
+        <figcaption>Mechanical layout reference for the planned 6-DOF arm architecture.</figcaption>
       </figure>
     </section>
 
-    <main class="case-content" id="case-content" tabindex="-1">
+    <main class="case-content project-content" id="case-content" tabindex="-1">
       <section class="case-section" aria-labelledby="overview-title">
         <h2 id="overview-title">Overview</h2>
-        <p>This project is a 6-DOF robotic arm design study focused on the early mechanical decisions that define the rest of the system: joint layout, link geometry, drive packaging, and manufacturability. The project documentation includes a degree-of-freedom CAD view, a calculation sketch, and a custom cycloidal disk model.</p>
+        <p>This project is an in-progress 6-DOF robotic arm development effort. The current documented phase is mechanical design: defining the arm architecture, laying out joint axes, checking torque paths, exploring drivetrain options, and packaging the mechanism before committing to fabrication.</p>
       </section>
 
-      <section class="case-section" aria-labelledby="problem-title">
-        <h2 id="problem-title">Problem / Motivation</h2>
-        <p>A robotic arm is a combined mechanical design and controls problem, but early choices about joint layout, actuator placement, stiffness, and transmission strategy shape everything after. This page frames the work as an engineering design study to choose an architecture that can be analyzed before committing to fabrication.</p>
+      <section class="case-section" aria-labelledby="role-title">
+        <h2 id="role-title">My role / current status</h2>
+        <p>My current work is focused on the mechanical side of the arm: CAD layout, joint architecture, preliminary torque calculations, drivetrain exploration, and packaging. Electronics, controls, fabrication, testing, and AI/ML integration are planned future phases and are not presented here as complete.</p>
       </section>
 
-      <section class="case-section" aria-labelledby="constraints-title">
-        <h2 id="constraints-title">Engineering Constraints</h2>
-        <p>Key constraints are reach, joint torque, stiffness, packaging, manufacturability, and serviceability. The public discussion currently centers on architecture and design tradeoffs because payload targets and measured performance values are not documented.</p>
+      <section class="case-section" aria-labelledby="development-title">
+        <h2 id="development-title">Project development</h2>
+        <div>
+          <p>The project is being developed from the mechanical architecture outward so that later electrical and controls decisions have a clear mechanical baseline to support.</p>
+          <ul class="development-list">
+            <li><strong>Arm architecture:</strong> laying out the base, shoulder, elbow, wrist, and end-effector degrees of freedom.</li>
+            <li><strong>CAD packaging:</strong> organizing link geometry, joint envelopes, fastener access, and drivetrain space.</li>
+            <li><strong>Preliminary calculations:</strong> estimating joint torque needs and using those estimates to guide drivetrain decisions.</li>
+            <li><strong>Drivetrain exploration:</strong> comparing compact reduction concepts, including cycloidal-drive geometry, before selecting hardware.</li>
+            <li><strong>Future integration:</strong> leaving room in the project plan for electronics, controls, fabrication, testing, and AI/ML work after the mechanical baseline is better defined.</li>
+          </ul>
+        </div>
       </section>
 
-      <section class="case-section" aria-labelledby="approach-title">
-        <h2 id="approach-title">Design Approach</h2>
-        <p>The approach starts with a 6-DOF layout, then uses dimensions and joint relationships to reason about range of motion and torque paths. The custom cycloidal-drive exploration indicates a focus on compact reduction and backlash control while keeping the project in an exploratory, prototype-planning stage.</p>
+      <section class="case-section" aria-labelledby="architecture-title">
+        <h2 id="architecture-title">Joint architecture</h2>
+        <p>The arm is being planned around a 6-DOF layout so the mechanical structure can support useful positioning and orientation work later. At this stage, the documented work is about joint order, axis placement, link relationships, packaging space, and how loads would move through the arm.</p>
       </section>
 
       <section class="case-section" aria-labelledby="cad-title">
-        <h2 id="cad-title">CAD / Mechanical Design</h2>
-        <p>The CAD images show joint axes, a base/shoulder/elbow style arrangement, and individual drive geometry being developed. The cycloidal disk asset is useful evidence of mechanism-level design work, separate from the larger arm layout.</p>
+        <h2 id="cad-title">CAD and packaging</h2>
+        <p>The CAD work is being used to turn the arm concept into a manufacturable mechanical layout. Current packaging questions include actuator placement, link clearances, joint module size, service access, and whether the drivetrain concepts fit inside realistic joint envelopes.</p>
       </section>
 
-      <section class="case-section" aria-labelledby="fabrication-title">
-        <h2 id="fabrication-title">Prototype / Fabrication</h2>
-        <p>The available project evidence supports CAD and mechanism exploration rather than a finished physical build. The prototype state is presented as calculation and CAD validation until fabricated links, joints, or drive tests are documented.</p>
+      <section class="case-section" aria-labelledby="drivetrain-title">
+        <h2 id="drivetrain-title">Drivetrain exploration</h2>
+        <p>The drivetrain work is exploratory. The cycloidal disk model documents one reduction concept being considered for compact joint packaging, but it does not represent a validated transmission or tested joint module yet.</p>
       </section>
 
-      <section class="case-section" aria-labelledby="testing-title">
-        <h2 id="testing-title">Testing / Results</h2>
-        <p>Testing work is limited to design review and calculation checks for now: verifying link dimensions, joint clearances, approximate torque needs, and whether the drive concept is worth prototyping. The page stays focused on design validation until measured motor current, backlash, payload, repeatability, or deflection data exists.</p>
-      </section>
-
-      <section class="case-section" aria-labelledby="iterations-title">
-        <h2 id="iterations-title">Failures / Iterations</h2>
-        <p>The major iteration risk is discovering that a joint package that looks feasible in CAD becomes too bulky, too flexible, or too difficult to manufacture. The cycloidal-drive path also needs validation for tolerance sensitivity, assembly complexity, and whether the reduction strategy is worth the fabrication effort.</p>
-      </section>
-
-      <section class="case-section" aria-labelledby="lessons-title">
-        <h2 id="lessons-title">Lessons Learned</h2>
-        <p>The arm study is useful because it shows disciplined concept development before hardware commitment. Separating arm-level architecture from drive-level experiments makes it easier to evaluate tradeoffs without overclaiming a finished robot.</p>
-      </section>
-
-      <section class="case-section" aria-labelledby="next-title">
-        <h2 id="next-title">Next Steps</h2>
-        <p>The strongest next evidence would be a clearly documented prototype milestone, such as one joint test rig, a fabricated drive sample, or a partial arm assembly. Measured backlash, torque, and stiffness from a single joint module would make the next revision stronger.</p>
+      <section class="case-section" aria-labelledby="calculation-title">
+        <h2 id="calculation-title">Torque calculations</h2>
+        <p>The calculation work is preliminary and used for design direction, not final performance claims. These estimates help identify which joints are likely to drive actuator selection, reduction ratio choices, and packaging constraints in later revisions.</p>
       </section>
 
       <section class="gallery-section" aria-labelledby="gallery-title">
-        <h2 id="gallery-title">Gallery</h2>
+        <h2 id="gallery-title">Image notes</h2>
         <div class="gallery-copy">
-          <p class="gallery-note">Reference images documenting arm geometry calculations, degree-of-freedom planning, and the custom cycloidal disk exploration.</p>
+          <p class="gallery-note">Reference images documenting mechanical layout, preliminary calculations, and drivetrain geometry exploration.</p>
           <div class="gallery-grid">
             <figure class="gallery-item">
               <img
                 src="../assets/robotic-arm-calculations.png"
-                alt="Calculation sheet for robotic arm link geometry and joint checks"
+                alt="Preliminary calculation notes for robotic arm geometry and joint torque checks"
                 loading="lazy"
                 decoding="async"
               >
-              <figcaption>Calculations</figcaption>
+              <figcaption>Preliminary calculations used to guide mechanical design decisions.</figcaption>
             </figure>
             <figure class="gallery-item">
               <img
@@ -154,7 +149,7 @@
                 loading="lazy"
                 decoding="async"
               >
-              <figcaption>Degrees of freedom</figcaption>
+              <figcaption>Degree-of-freedom layout for the planned arm architecture.</figcaption>
             </figure>
             <figure class="gallery-item">
               <img
@@ -163,9 +158,35 @@
                 loading="lazy"
                 decoding="async"
               >
-              <figcaption>Cycloidal disk</figcaption>
+              <figcaption>Cycloidal disk CAD model for drivetrain exploration.</figcaption>
             </figure>
           </div>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="skills-title">
+        <h2 id="skills-title">Skills used</h2>
+        <ul class="skills-list">
+          <li>Robotic arm mechanical architecture</li>
+          <li>CAD layout and packaging</li>
+          <li>Preliminary torque calculations</li>
+          <li>Joint and drivetrain concept exploration</li>
+          <li>Design-for-fabrication planning</li>
+          <li>Engineering documentation</li>
+        </ul>
+      </section>
+
+      <section class="case-section" aria-labelledby="next-title">
+        <h2 id="next-title">Current status / next steps</h2>
+        <p>The project is currently in the mechanical design and documentation phase. Next steps are to refine the joint packages, select a drivetrain direction, prepare fabrication-ready parts, build and test a joint or partial assembly, then move into electronics, controls, and AI/ML integration after the hardware path is clearer.</p>
+      </section>
+
+      <section class="case-section other-projects" aria-labelledby="other-projects-title">
+        <h2 id="other-projects-title">Other projects</h2>
+        <div class="project-link-grid">
+          <a class="footer-link" href="finger-module-concept.html">Finger module concept notes</a>
+          <a class="footer-link" href="omni-lab.html">OH-MIND Lab research</a>
+          <a class="footer-link" href="lerobot-hackathon.html">LeRobot hackathon</a>
         </div>
       </section>
     </main>
