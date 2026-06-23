@@ -1353,7 +1353,10 @@ dl.project-snapshot > div,
 }
 
 .visual-project-hero img,
-.visual-step img {
+.visual-step img,
+.visual-project-hero .visual-concept-sketch,
+.visual-step .visual-concept-sketch {
+  display: block;
   width: 100%;
   background:
     linear-gradient(135deg, rgba(47, 111, 94, 0.07), transparent 50%),
@@ -1361,7 +1364,8 @@ dl.project-snapshot > div,
   object-fit: contain;
 }
 
-.visual-project-hero img {
+.visual-project-hero img,
+.visual-project-hero .visual-concept-sketch {
   height: clamp(360px, 62vw, 840px);
   padding: clamp(14px, 2vw, 28px);
 }
@@ -1404,9 +1408,14 @@ dl.project-snapshot > div,
   margin: 0;
 }
 
-.visual-step img {
+.visual-step img,
+.visual-step .visual-concept-sketch {
   height: clamp(360px, 56vw, 780px);
   padding: clamp(12px, 2vw, 24px);
+}
+
+.visual-concept-sketch {
+  color: var(--accent-strong);
 }
 
 .visual-step figcaption {
@@ -1552,7 +1561,9 @@ dl.project-snapshot > div,
   }
 
   .visual-project-hero img,
-  .visual-step img {
+  .visual-step img,
+  .visual-project-hero .visual-concept-sketch,
+  .visual-step .visual-concept-sketch {
     height: clamp(300px, 92vw, 430px);
     padding: 10px;
   }
