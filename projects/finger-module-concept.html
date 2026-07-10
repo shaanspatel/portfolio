@@ -6,13 +6,13 @@
     <title>Finger Module Concept | Shaan Patel</title>
     <meta
       name="description"
-      content="Independent mechanical design study for a personal tendon-driven finger module concept, documented as early-stage project notes and work in progress."
+      content="Independent early-stage project notes for a personal tendon-driven finger module concept focused on mechanism layout, tendon routing, packaging, and future prototype questions."
     >
     <meta name="author" content="Shaan Patel">
     <meta property="og:title" content="Finger Module Concept">
     <meta
       property="og:description"
-      content="Personal project notes for an early-stage tendon-driven finger module concept focused on mechanical packaging, CAD planning, and prototyping questions."
+      content="Personal work-in-progress notes for an independent tendon-driven finger module concept."
     >
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Shaan Patel Portfolio">
@@ -20,291 +20,225 @@
     <meta name="twitter:title" content="Finger Module Concept">
     <meta
       name="twitter:description"
-      content="Independent mechanical design study for a personal tendon-driven finger module concept and future prototype plan."
+      content="Early-stage independent mechanical design notes for a personal tendon-driven finger module concept."
     >
-    <link rel="stylesheet" href="../styles.css?v=20260513-1">
+    <link rel="stylesheet" href="../styles.css?v=20260622-1">
   </head>
-  <body class="project-notes-page case-page">
+  <body class="visual-project-page">
     <a class="skip-link" href="#project-content">Skip to project notes</a>
-    <header class="case-header">
-      <nav class="case-nav" aria-label="Project navigation">
+
+    <header class="visual-project-header">
+      <nav class="visual-project-nav" aria-label="Project navigation">
         <a class="brand" href="../index.html" aria-label="Shaan Patel home">Shaan Patel</a>
         <a class="back-link" href="../index.html#projects">Back to project hub</a>
       </nav>
 
-      <div class="case-title">
-        <div>
-          <p class="intro-label">Independent mechanical design study</p>
-          <h1>Finger module concept</h1>
-        </div>
-        <p class="case-summary">
-          Personal tendon-driven finger module concept focused on linkage
-          packaging, tendon routing, joint stackups, and the questions that need
-          to be answered before a build.
-        </p>
+      <div class="visual-project-title">
+        <h1>Finger Module Concept</h1>
+        <p class="visual-project-subtitle">Independent Work in Progress</p>
+        <p class="visual-project-status">Personal tendon-driven finger module concept in an early mechanical layout stage.</p>
       </div>
 
-      <dl class="project-snapshot project-meta">
-        <div>
-          <dt>Role</dt>
-          <dd>Personal mechanical design study</dd>
-        </div>
-        <div>
-          <dt>Stage</dt>
-          <dd>Early-stage concept notes</dd>
-        </div>
-        <div>
-          <dt>Tools</dt>
-          <dd>CAD planning, mechanism sketches, assembly reasoning</dd>
-        </div>
-        <div>
-          <dt>Status</dt>
-          <dd>Work in progress; not validated</dd>
-        </div>
-        <div>
-          <dt>Focus Areas</dt>
-          <dd>Tendon routing, finger linkages, packaging, service access</dd>
-        </div>
-      </dl>
-    </header>
-
-    <section class="case-hero" aria-label="Finger module concept sketch">
-      <figure>
+      <figure class="visual-project-hero">
         <svg
-          class="concept-sketch concept-sketch-hero"
+          class="visual-concept-sketch"
           role="img"
-          aria-labelledby="finger-module-hero-sketch-title"
+          aria-labelledby="finger-hero-title"
           viewBox="0 0 1200 720"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <title id="finger-module-hero-sketch-title">Concept sketch of a tendon-driven finger module with linkage and routing notes</title>
-          <rect x="48" y="52" width="1104" height="616" rx="14" fill="#f8faf6"></rect>
-          <path d="M114 544 L456 544" stroke="#a8b7af" stroke-width="10" stroke-linecap="round"></path>
-          <path d="M132 470 C304 398 468 350 622 286 C756 232 856 158 976 88" fill="none" stroke="#2f6f5e" stroke-width="10" stroke-linecap="round" stroke-dasharray="26 18"></path>
-          <path d="M120 390 L316 318 L362 454 L166 536 Z" fill="#ffffff" stroke="#232925" stroke-width="10" stroke-linejoin="round"></path>
-          <path d="M326 314 L554 232 L596 356 L370 452 Z" fill="#ffffff" stroke="#232925" stroke-width="10" stroke-linejoin="round"></path>
-          <path d="M568 226 L808 116 L854 224 L612 350 Z" fill="#ffffff" stroke="#232925" stroke-width="10" stroke-linejoin="round"></path>
-          <path d="M826 112 L1002 50 L1038 140 L868 222 Z" fill="#ffffff" stroke="#232925" stroke-width="10" stroke-linejoin="round"></path>
-          <circle cx="162" cy="462" r="27" fill="#f8faf6" stroke="#2f6f5e" stroke-width="9"></circle>
-          <circle cx="356" cy="382" r="27" fill="#f8faf6" stroke="#2f6f5e" stroke-width="9"></circle>
-          <circle cx="594" cy="292" r="27" fill="#f8faf6" stroke="#2f6f5e" stroke-width="9"></circle>
-          <circle cx="852" cy="168" r="27" fill="#f8faf6" stroke="#2f6f5e" stroke-width="9"></circle>
-          <path d="M214 444 L296 414" stroke="#9fb8ad" stroke-width="8" stroke-linecap="round"></path>
-          <path d="M420 364 L518 326" stroke="#9fb8ad" stroke-width="8" stroke-linecap="round"></path>
-          <path d="M674 270 L778 220" stroke="#9fb8ad" stroke-width="8" stroke-linecap="round"></path>
-          <path d="M98 592 L1082 592" stroke="#d0d8d2" stroke-width="6" stroke-linecap="round"></path>
-          <path d="M150 590 L150 552 M354 590 L354 552 M594 590 L594 552 M850 590 L850 552" stroke="#d0d8d2" stroke-width="6" stroke-linecap="round"></path>
+          <title id="finger-hero-title">Concept sketch of an early tendon-driven finger module layout</title>
+          <rect x="54" y="58" width="1092" height="604" rx="14" fill="#f8faf6"></rect>
+          <path d="M126 552 H482" stroke="#a8b7af" stroke-width="11" stroke-linecap="round"></path>
+          <path d="M134 474 C318 392 488 350 636 288 C766 234 874 154 1002 82" fill="none" stroke="#2f6f5e" stroke-width="11" stroke-linecap="round" stroke-dasharray="26 18"></path>
+          <path d="M124 398 L318 322 L366 456 L170 540 Z" fill="#ffffff" stroke="#232925" stroke-width="10" stroke-linejoin="round"></path>
+          <path d="M330 316 L556 230 L600 358 L374 454 Z" fill="#ffffff" stroke="#232925" stroke-width="10" stroke-linejoin="round"></path>
+          <path d="M570 224 L810 114 L858 226 L614 352 Z" fill="#ffffff" stroke="#232925" stroke-width="10" stroke-linejoin="round"></path>
+          <path d="M828 110 L1004 50 L1042 142 L870 224 Z" fill="#ffffff" stroke="#232925" stroke-width="10" stroke-linejoin="round"></path>
+          <circle cx="166" cy="466" r="28" fill="#f8faf6" stroke="#2f6f5e" stroke-width="9"></circle>
+          <circle cx="360" cy="386" r="28" fill="#f8faf6" stroke="#2f6f5e" stroke-width="9"></circle>
+          <circle cx="598" cy="294" r="28" fill="#f8faf6" stroke="#2f6f5e" stroke-width="9"></circle>
+          <circle cx="856" cy="170" r="28" fill="#f8faf6" stroke="#2f6f5e" stroke-width="9"></circle>
+          <path d="M218 448 L300 418" stroke="#9fb8ad" stroke-width="8" stroke-linecap="round"></path>
+          <path d="M424 366 L522 328" stroke="#9fb8ad" stroke-width="8" stroke-linecap="round"></path>
+          <path d="M678 272 L782 222" stroke="#9fb8ad" stroke-width="8" stroke-linecap="round"></path>
+          <path d="M98 600 H1092" stroke="#d0d8d2" stroke-width="6" stroke-linecap="round"></path>
+          <path d="M154 598 V558 M360 598 V558 M598 598 V558 M856 598 V558" stroke="#d0d8d2" stroke-width="6" stroke-linecap="round"></path>
         </svg>
-        <figcaption>Finger module linkage concept sketch</figcaption>
+        <figcaption>Public-safe concept sketch for the finger module layout direction.</figcaption>
       </figure>
-    </section>
+    </header>
 
-    <main class="project-content case-content" id="project-content" tabindex="-1">
-      <section class="case-section" aria-labelledby="overview-title">
-        <h2 id="overview-title">Overview</h2>
-        <p>
-          This is a personal finger module concept, framed as an independent
-          mechanical design study rather than company work. The goal is to
-          document how a tendon-driven robotic finger could be organized as a
-          repeatable module, while staying honest about the current state: the
-          concept is early, in progress, and not validated.
-        </p>
+    <main class="visual-project-main" id="project-content" tabindex="-1">
+      <section class="visual-project-intro" aria-label="Short project summary">
+        <p>This is a personal, independent concept for a tendon-driven robotic finger module. The work is intentionally presented as early design thinking, not as a built, tested, or validated mechanism.</p>
       </section>
 
-      <section class="case-section" aria-labelledby="role-title">
-        <h2 id="role-title">My role / current status</h2>
-        <p>
-          My role is to define the mechanical architecture, identify the open
-          packaging questions, and turn the idea into project documentation that
-          can guide a future prototype. The sketches on this page are concept
-          visuals for hand and finger mechanism discussion; they are not being
-          presented as proof that this independent concept has been fabricated,
-          tested, or validated.
-        </p>
+      <section class="visual-walkthrough" aria-label="Finger module visual walkthrough">
+        <article class="visual-step">
+          <figure>
+            <svg
+              class="visual-concept-sketch"
+              role="img"
+              aria-labelledby="finger-linkage-title"
+              viewBox="0 0 900 600"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title id="finger-linkage-title">Concept sketch of finger linkage spacing</title>
+              <rect x="46" y="56" width="808" height="488" rx="12" fill="#f8faf6"></rect>
+              <path d="M110 392 L292 316 L330 414 L148 496 Z" fill="#ffffff" stroke="#232925" stroke-width="9" stroke-linejoin="round"></path>
+              <path d="M306 308 L496 230 L534 320 L344 412 Z" fill="#ffffff" stroke="#232925" stroke-width="9" stroke-linejoin="round"></path>
+              <path d="M512 222 L710 122 L748 204 L548 318 Z" fill="#ffffff" stroke="#232925" stroke-width="9" stroke-linejoin="round"></path>
+              <path d="M106 430 C260 360 412 304 726 166" fill="none" stroke="#2f6f5e" stroke-width="8" stroke-linecap="round" stroke-dasharray="22 16"></path>
+              <circle cx="148" cy="430" r="22" fill="#f8faf6" stroke="#2f6f5e" stroke-width="8"></circle>
+              <circle cx="330" cy="366" r="22" fill="#f8faf6" stroke="#2f6f5e" stroke-width="8"></circle>
+              <circle cx="534" cy="276" r="22" fill="#f8faf6" stroke="#2f6f5e" stroke-width="8"></circle>
+              <path d="M108 510 H760" stroke="#d0d8d2" stroke-width="7" stroke-linecap="round"></path>
+            </svg>
+            <figcaption>
+              <h2>Linkage direction</h2>
+              <p>The concept starts with a repeatable link and joint layout for one finger before expanding into a larger hand. This sketch is a planning reference for proportions, not a finished CAD model.</p>
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="visual-step">
+          <figure>
+            <svg
+              class="visual-concept-sketch"
+              role="img"
+              aria-labelledby="finger-routing-title"
+              viewBox="0 0 900 600"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title id="finger-routing-title">Concept sketch of tendon routing through a finger module</title>
+              <rect x="46" y="56" width="808" height="488" rx="12" fill="#f8faf6"></rect>
+              <path d="M132 380 L308 310 L358 424 L176 492 Z" fill="#ffffff" stroke="#232925" stroke-width="9" stroke-linejoin="round"></path>
+              <path d="M320 304 L514 232 L560 328 L370 420 Z" fill="#ffffff" stroke="#232925" stroke-width="9" stroke-linejoin="round"></path>
+              <path d="M530 224 L730 126 L770 210 L574 324 Z" fill="#ffffff" stroke="#232925" stroke-width="9" stroke-linejoin="round"></path>
+              <path d="M104 488 C210 418 314 370 450 324 C560 286 650 230 786 118" fill="none" stroke="#2f6f5e" stroke-width="8" stroke-linecap="round"></path>
+              <path d="M104 446 C224 390 340 342 482 292 C594 254 682 204 792 94" fill="none" stroke="#9fb8ad" stroke-width="7" stroke-linecap="round" stroke-dasharray="18 15"></path>
+              <circle cx="176" cy="438" r="20" fill="#f8faf6" stroke="#2f6f5e" stroke-width="8"></circle>
+              <circle cx="370" cy="366" r="20" fill="#f8faf6" stroke="#2f6f5e" stroke-width="8"></circle>
+              <circle cx="574" cy="276" r="20" fill="#f8faf6" stroke="#2f6f5e" stroke-width="8"></circle>
+            </svg>
+            <figcaption>
+              <h2>Tendon path questions</h2>
+              <p>The routing concept reserves space for tendon entry, return paths, and adjustment access. Those choices still need a physical test module before any claims about friction, motion quality, or durability would be responsible.</p>
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="visual-step">
+          <figure>
+            <svg
+              class="visual-concept-sketch"
+              role="img"
+              aria-labelledby="finger-packaging-title"
+              viewBox="0 0 900 600"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title id="finger-packaging-title">Concept sketch of finger module packaging envelope</title>
+              <rect x="46" y="56" width="808" height="488" rx="12" fill="#f8faf6"></rect>
+              <rect x="130" y="338" width="278" height="104" rx="10" fill="#ffffff" stroke="#232925" stroke-width="9"></rect>
+              <path d="M188 338 L312 188 H560 L678 338" fill="none" stroke="#232925" stroke-width="9" stroke-linejoin="round"></path>
+              <path d="M312 188 L376 338 M560 188 L502 338" stroke="#9fb8ad" stroke-width="8" stroke-linecap="round"></path>
+              <path d="M164 392 H730" stroke="#2f6f5e" stroke-width="9" stroke-linecap="round" stroke-dasharray="22 16"></path>
+              <circle cx="194" cy="392" r="21" fill="#f8faf6" stroke="#2f6f5e" stroke-width="8"></circle>
+              <circle cx="378" cy="392" r="21" fill="#f8faf6" stroke="#2f6f5e" stroke-width="8"></circle>
+              <circle cx="562" cy="392" r="21" fill="#f8faf6" stroke="#2f6f5e" stroke-width="8"></circle>
+              <path d="M678 338 V442 H408" fill="none" stroke="#232925" stroke-width="9" stroke-linejoin="round"></path>
+            </svg>
+            <figcaption>
+              <h2>Packaging envelope</h2>
+              <p>The packaging pass is about finding room for pins, fasteners, tendon exits, and a palm interface. The drawing keeps the current focus on layout constraints rather than presenting a fabricated assembly.</p>
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="visual-step">
+          <figure>
+            <svg
+              class="visual-concept-sketch"
+              role="img"
+              aria-labelledby="finger-test-title"
+              viewBox="0 0 900 600"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title id="finger-test-title">Concept sketch of a future one-finger test module</title>
+              <rect x="46" y="56" width="808" height="488" rx="12" fill="#f8faf6"></rect>
+              <path d="M126 424 H760" stroke="#232925" stroke-width="9" stroke-linecap="round"></path>
+              <rect x="150" y="312" width="186" height="112" rx="10" fill="#ffffff" stroke="#232925" stroke-width="9"></rect>
+              <path d="M250 312 C356 232 474 198 626 142" fill="none" stroke="#232925" stroke-width="9" stroke-linecap="round"></path>
+              <path d="M236 352 C370 306 500 250 704 120" fill="none" stroke="#2f6f5e" stroke-width="8" stroke-linecap="round" stroke-dasharray="22 16"></path>
+              <circle cx="250" cy="312" r="24" fill="#f8faf6" stroke="#2f6f5e" stroke-width="8"></circle>
+              <circle cx="422" cy="238" r="22" fill="#f8faf6" stroke="#2f6f5e" stroke-width="8"></circle>
+              <circle cx="626" cy="142" r="20" fill="#f8faf6" stroke="#2f6f5e" stroke-width="8"></circle>
+              <path d="M150 474 H698" stroke="#a8b7af" stroke-width="7" stroke-linecap="round" stroke-dasharray="18 15"></path>
+            </svg>
+            <figcaption>
+              <h2>Future test module</h2>
+              <p>The next sensible step would be one finger module on a simple fixture, used to inspect assembly access and tendon behavior. Until that exists, this remains a concept and work in progress.</p>
+            </figcaption>
+          </figure>
+        </article>
       </section>
 
-      <section class="case-section" aria-labelledby="development-title">
-        <h2 id="development-title">Project development</h2>
-        <div>
-          <p>
-            The development work is organized around the mechanical decisions
-            that would make one finger module understandable, buildable, and
-            serviceable before scaling it into a hand.
-          </p>
-          <ul class="development-list" aria-label="Finger module development focus">
-            <li>Define a repeatable link and joint layout</li>
-            <li>Reserve space for tendon paths and return routing</li>
-            <li>Check bearing, pin, and fastener access in the stackup</li>
-            <li>Plan how one module would attach to a palm structure</li>
-            <li>Separate concept assumptions from future prototype evidence</li>
-            <li>Document next tests before making performance claims</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="case-section" aria-labelledby="mechanism-title">
-        <h2 id="mechanism-title">Mechanism Questions</h2>
-        <p>
-          The main engineering question is how to route tendon lines through a
-          compact articulated finger without making assembly or adjustment too
-          fragile. The concept needs enough room for joints, tendon exits,
-          fasteners, and service access while preserving a clear load path from
-          the tendon to the phalange links.
-        </p>
-      </section>
-
-      <section class="case-section" aria-labelledby="cad-title">
-        <h2 id="cad-title">CAD and packaging</h2>
-        <p>
-          The next CAD pass should focus on the smallest useful subsystem: one
-          finger module with link geometry, joint hardware, tendon entry and
-          exit points, and an interface to a palm or mounting plate. Keeping the
-          model modular should make it easier to revise tendon paths or link
-          proportions without redesigning the whole hand.
-        </p>
-      </section>
-
-      <section class="case-section" aria-labelledby="prototype-title">
-        <h2 id="prototype-title">Prototype Plan</h2>
-        <p>
-          A responsible prototype step would be a single finger test module,
-          not a full hand. That module should be used to inspect assembly
-          access, tendon friction, joint motion, and whether the chosen hardware
-          stackup is practical. Until that test exists, the page treats the work
-          as concept development rather than a proven mechanism.
-        </p>
-      </section>
-
-      <section class="gallery-section" aria-labelledby="concept-visuals-title">
-        <h2 id="concept-visuals-title">Concept Visuals</h2>
-        <div class="gallery-copy">
-          <p class="gallery-note">
-            These sketches are included as mechanism and packaging references
-            for the project notes. The captions describe the intended design
-            focus without treating the visuals as validation of this
-            independent concept.
-          </p>
-          <div class="gallery-grid">
-            <figure class="gallery-item">
-              <svg
-                class="concept-sketch"
-                role="img"
-                aria-labelledby="linkage-sketch-title"
-                viewBox="0 0 640 480"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title id="linkage-sketch-title">Concept sketch of finger linkage spacing</title>
-                <rect x="30" y="44" width="580" height="392" rx="12" fill="#f8faf6"></rect>
-                <path d="M92 344 L224 288 L252 356 L122 414 Z" fill="#ffffff" stroke="#232925" stroke-width="8" stroke-linejoin="round"></path>
-                <path d="M236 282 L374 222 L402 286 L264 354 Z" fill="#ffffff" stroke="#232925" stroke-width="8" stroke-linejoin="round"></path>
-                <path d="M386 216 L526 146 L552 202 L414 284 Z" fill="#ffffff" stroke="#232925" stroke-width="8" stroke-linejoin="round"></path>
-                <path d="M84 374 C206 328 326 280 534 174" fill="none" stroke="#2f6f5e" stroke-width="7" stroke-linecap="round" stroke-dasharray="18 14"></path>
-                <circle cx="118" cy="374" r="18" fill="#f8faf6" stroke="#2f6f5e" stroke-width="7"></circle>
-                <circle cx="252" cy="322" r="18" fill="#f8faf6" stroke="#2f6f5e" stroke-width="7"></circle>
-                <circle cx="402" cy="254" r="18" fill="#f8faf6" stroke="#2f6f5e" stroke-width="7"></circle>
-              </svg>
-              <figcaption>Finger linkage sketch</figcaption>
-            </figure>
-            <figure class="gallery-item">
-              <svg
-                class="concept-sketch"
-                role="img"
-                aria-labelledby="packaging-sketch-title"
-                viewBox="0 0 640 480"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title id="packaging-sketch-title">Concept sketch of finger module CAD packaging envelope</title>
-                <rect x="30" y="44" width="580" height="392" rx="12" fill="#f8faf6"></rect>
-                <rect x="96" y="270" width="208" height="96" rx="10" fill="#ffffff" stroke="#232925" stroke-width="8"></rect>
-                <path d="M160 270 L256 160 L436 160 L516 270" fill="none" stroke="#232925" stroke-width="8" stroke-linejoin="round"></path>
-                <path d="M256 160 L304 270 M436 160 L390 270" stroke="#9fb8ad" stroke-width="7" stroke-linecap="round"></path>
-                <path d="M126 318 H526" stroke="#2f6f5e" stroke-width="8" stroke-linecap="round" stroke-dasharray="20 14"></path>
-                <circle cx="160" cy="318" r="17" fill="#f8faf6" stroke="#2f6f5e" stroke-width="7"></circle>
-                <circle cx="298" cy="318" r="17" fill="#f8faf6" stroke="#2f6f5e" stroke-width="7"></circle>
-                <circle cx="436" cy="318" r="17" fill="#f8faf6" stroke="#2f6f5e" stroke-width="7"></circle>
-                <path d="M516 270 V366 H304" fill="none" stroke="#232925" stroke-width="8" stroke-linejoin="round"></path>
-              </svg>
-              <figcaption>CAD packaging sketch</figcaption>
-            </figure>
-            <figure class="gallery-item">
-              <svg
-                class="concept-sketch"
-                role="img"
-                aria-labelledby="hardware-sketch-title"
-                viewBox="0 0 640 480"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title id="hardware-sketch-title">Concept sketch of joint hardware stackup planning</title>
-                <rect x="30" y="44" width="580" height="392" rx="12" fill="#f8faf6"></rect>
-                <path d="M130 334 H510" stroke="#232925" stroke-width="8" stroke-linecap="round"></path>
-                <rect x="148" y="194" width="84" height="140" rx="10" fill="#ffffff" stroke="#232925" stroke-width="8"></rect>
-                <rect x="278" y="150" width="84" height="184" rx="10" fill="#ffffff" stroke="#232925" stroke-width="8"></rect>
-                <rect x="408" y="224" width="84" height="110" rx="10" fill="#ffffff" stroke="#232925" stroke-width="8"></rect>
-                <circle cx="190" cy="262" r="25" fill="#f8faf6" stroke="#2f6f5e" stroke-width="8"></circle>
-                <circle cx="320" cy="242" r="25" fill="#f8faf6" stroke="#2f6f5e" stroke-width="8"></circle>
-                <circle cx="450" cy="280" r="25" fill="#f8faf6" stroke="#2f6f5e" stroke-width="8"></circle>
-                <path d="M108 392 H532" stroke="#9fb8ad" stroke-width="7" stroke-linecap="round" stroke-dasharray="18 14"></path>
-              </svg>
-              <figcaption>Hardware stackup sketch</figcaption>
-            </figure>
-            <figure class="gallery-item">
-              <svg
-                class="concept-sketch"
-                role="img"
-                aria-labelledby="palm-interface-sketch-title"
-                viewBox="0 0 640 480"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title id="palm-interface-sketch-title">Concept sketch of palm interface and tendon routing</title>
-                <rect x="30" y="44" width="580" height="392" rx="12" fill="#f8faf6"></rect>
-                <path d="M128 154 H512 V350 H128 Z" fill="#ffffff" stroke="#232925" stroke-width="8" stroke-linejoin="round"></path>
-                <path d="M178 300 C240 246 312 226 386 202 C442 184 488 154 528 112" fill="none" stroke="#2f6f5e" stroke-width="8" stroke-linecap="round" stroke-dasharray="20 14"></path>
-                <circle cx="190" cy="204" r="20" fill="#f8faf6" stroke="#232925" stroke-width="7"></circle>
-                <circle cx="320" cy="204" r="20" fill="#f8faf6" stroke="#232925" stroke-width="7"></circle>
-                <circle cx="450" cy="204" r="20" fill="#f8faf6" stroke="#232925" stroke-width="7"></circle>
-                <path d="M178 294 H462" stroke="#9fb8ad" stroke-width="7" stroke-linecap="round"></path>
-                <path d="M224 154 V350 M416 154 V350" stroke="#d0d8d2" stroke-width="6" stroke-linecap="round"></path>
-              </svg>
-              <figcaption>Palm interface sketch</figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <section class="case-section" aria-labelledby="skills-title">
-        <h2 id="skills-title">Skills used</h2>
-        <ul class="skills-list" aria-label="Skills used on the finger module concept">
+      <section class="visual-skills" aria-labelledby="skills-title">
+        <h2 id="skills-title">Top Skills Used</h2>
+        <ul class="visual-skill-list">
           <li>Mechanical design reasoning</li>
-          <li>Robotic hand mechanism planning</li>
-          <li>Tendon-driven mechanism layout</li>
-          <li>CAD architecture planning</li>
-          <li>Assembly and serviceability review</li>
+          <li>Tendon-driven mechanisms</li>
+          <li>Robotic hand layout</li>
+          <li>Packaging planning</li>
+          <li>Assembly access review</li>
           <li>Prototype test planning</li>
         </ul>
       </section>
 
-      <section class="case-section" aria-labelledby="next-title">
-        <h2 id="next-title">Current status / next steps</h2>
-        <p>
-          Current status: work in progress. The next useful steps are to finish
-          a one-finger CAD module, define the hardware stackup, plan a tendon
-          path that can be adjusted by hand, and build a small test fixture
-          before documenting any measured behavior. Future notes should separate
-          what was designed, what was built, and what was actually tested.
-        </p>
-      </section>
+      <section class="visual-other-projects" aria-labelledby="other-projects-title">
+        <h2 id="other-projects-title">Other Projects</h2>
+        <div class="visual-project-link-grid">
+          <a class="visual-project-link" href="robotic-arm.html">
+            <span class="visual-project-thumb">
+              <img
+                src="../assets/robotic-arm-dof.png"
+                alt="CAD view thumbnail for the 6-DOF robotic arm project"
+                loading="lazy"
+                decoding="async"
+              >
+            </span>
+            <span>6-DOF Robotic Arm</span>
+          </a>
 
-      <section class="case-section other-projects" aria-labelledby="other-projects-title">
-        <h2 id="other-projects-title">Other projects</h2>
-        <div class="project-link-grid">
-          <a class="footer-link" href="robotic-arm.html">6-DOF robotic arm project notes</a>
-          <a class="footer-link" href="omni-lab.html">OH-MIND Lab research notes</a>
-          <a class="footer-link" href="lerobot-hackathon.html">LeRobot hackathon project notes</a>
+          <a class="visual-project-link" href="omni-lab.html">
+            <span class="visual-project-thumb">
+              <img
+                src="../assets/Screenshot from 2026-03-08 20-06-47.png"
+                alt="OH-MIND simulation visual thumbnail"
+                loading="lazy"
+                decoding="async"
+              >
+            </span>
+            <span>OH-MIND Lab Research</span>
+          </a>
+
+          <a class="visual-project-link" href="lerobot-hackathon.html">
+            <span class="visual-project-thumb">
+              <img
+                src="../assets/IMG_9678.jpg"
+                alt="LeRobot hackathon robot setup thumbnail"
+                loading="lazy"
+                decoding="async"
+              >
+            </span>
+            <span>LeRobot Hackathon</span>
+          </a>
         </div>
       </section>
     </main>
 
-    <footer class="case-footer">
+    <footer class="visual-project-footer">
       <a class="footer-link" href="../index.html#projects">Back to project hub</a>
       <a class="footer-link" href="robotic-arm.html">Next project: 6-DOF robotic arm</a>
     </footer>
