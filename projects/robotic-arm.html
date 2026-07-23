@@ -26,7 +26,7 @@
     >
     <meta name="twitter:image" content="../assets/robotic-arm-dof.png">
     <meta name="twitter:image:alt" content="CAD view of a 6-DOF robotic arm degree-of-freedom layout">
-    <link rel="stylesheet" href="../styles.css?v=20260520-1">
+    <link rel="stylesheet" href="../styles.css?v=20260710-1">
   </head>
   <body class="visual-project-page">
     <a class="skip-link" href="#project-content">Skip to project notes</a>
@@ -45,7 +45,7 @@
 
       <figure class="visual-project-hero">
         <img
-          src="../assets/robotic-arm-dof.png"
+          src="../assets/FrontLinkIso.png"
           alt="CAD model showing the planned degree-of-freedom layout for a 6-DOF robotic arm"
           decoding="async"
         >
@@ -63,14 +63,14 @@
         <article class="visual-step">
           <figure>
             <img
-              src="../assets/robotic-arm-dof.png"
+              src="../assets/FirstLinkFront.png"
               alt="CAD view of the planned robotic arm degree-of-freedom architecture"
               loading="lazy"
               decoding="async"
             >
             <figcaption>
               <h2>Arm architecture</h2>
-              <p>The layout is being organized around six degrees of freedom, with the base, shoulder, elbow, wrist, and end-effector relationships defined before hardware selection. This shows the current architecture direction, not a completed arm.</p>
+              <p>The layout is being organized around six degrees of freedom, with the base, shoulder, elbow, wrist, and end-effector relationships defined before hardware selection. This shows the current direction, the bottom two joints being developed with cyclodial drives and the other joints with a belt drive.</p>
             </figcaption>
           </figure>
         </article>
@@ -100,7 +100,7 @@
             >
             <figcaption>
               <h2>Torque calculations</h2>
-              <p>Preliminary calculations are being used to guide joint loading assumptions and drivetrain direction. They are early design inputs, not validated performance results.</p>
+              <p>Preliminary calculations are being used to guide joint loading assumptions and drivetrain direction. They are early design inputs, not validated performance results. Calculations can be found at this <a href="https://docs.google.com/spreadsheets/d/1levbSlnXuszqrpdhDj6p4WWyz2x23Eg3GXdmPVdkNsU/edit?usp=sharing">Calculation Sheet</a></p>
             </figcaption>
           </figure>
         </article>
@@ -114,8 +114,12 @@
               decoding="async"
             >
             <figcaption>
-              <h2>Drivetrain exploration</h2>
-              <p>The cycloidal disk model captures one compact reduction concept being explored for joint packaging. It is an exploratory CAD direction, not a tested or selected transmission.</p>
+              <h2>Gearbox Design</h2>
+              <p>A cycloidal drive is a compact gearbox that uses an eccentric, lobed disc to produce very high gear reduction with low backlash and high torque capacity. 
+                In a robot arm’s lower joints it handles the arm’s largest loads while providing precise, rigid positioning. 
+                The two cyclodials used in this design on joints 1 and 2 have a reduction ratio of 25:1 and 15:1. 
+                They were both custom designed along and are going to be 3D printed.
+                However, new reduction methods are being explore for the entire arm </p>
             </figcaption>
           </figure>
         </article>
