@@ -297,9 +297,39 @@ footer a,
   pointer-events: none;
 }
 
-.home-intro-copy {
+.home-intro-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.7fr);
+  gap: clamp(36px, 6vw, 86px);
+  align-items: center;
   width: min(100%, var(--page));
   margin: 0 auto;
+}
+
+.home-intro-copy {
+  min-width: 0;
+}
+
+.home-intro-visual {
+  width: min(100%, 560px);
+  margin: 0;
+  justify-self: end;
+  overflow: hidden;
+  border: 1px solid rgba(155, 196, 204, 0.44);
+  border-radius: 18px;
+  padding: 8px;
+  background: rgba(7, 13, 15, 0.72);
+  box-shadow:
+    0 24px 58px rgba(0, 0, 0, 0.34),
+    0 0 0 1px rgba(155, 196, 204, 0.08);
+}
+
+.home-intro-visual img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 10/7 ;
+  border-radius: 11px;
+  object-fit: cover;
 }
 
 .home-intro h1 {
@@ -1668,6 +1698,15 @@ dl.project-snapshot > div,
 }
 
 @media (max-width: 980px) {
+  .home-intro-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .home-intro-visual {
+    width: min(100%, 720px);
+    justify-self: start;
+  }
+
   .section-heading,
   .contact-grid,
   .case-title,
@@ -2367,6 +2406,68 @@ body {
   line-height: 1.7;
 }
 
+.visual-step .torque-image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(12px, 2vw, 22px);
+  margin-top: clamp(20px, 3vw, 32px);
+  padding: clamp(14px, 2vw, 24px);
+  background: var(--image-surface);
+}
+
+.visual-step .torque-calculations-visual {
+  margin-top: clamp(20px, 3vw, 32px);
+}
+
+.visual-step .torque-calculations-visual .torque-image-grid {
+  margin-top: 0;
+}
+
+.visual-step .torque-image-grid img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  border: 0;
+  border-radius: 8px;
+  padding: clamp(8px, 1.25vw, 16px);
+  background: var(--paper);
+  object-fit: contain;
+}
+
+.visual-step .gearbox-design-visual {
+  margin-top: clamp(20px, 3vw, 32px);
+}
+
+.visual-step .gearbox-image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(12px, 2vw, 22px);
+  margin-top: clamp(20px, 3vw, 32px);
+  border: 1px solid var(--line-strong);
+  border-radius: 14px;
+  padding: clamp(14px, 2vw, 24px);
+  background: var(--image-surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.visual-step .gearbox-design-visual .gearbox-image-grid {
+  margin-top: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.visual-step .gearbox-image-grid img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  border: 0;
+  border-radius: 8px;
+  padding: clamp(8px, 1.25vw, 16px);
+  background: var(--paper);
+  object-fit: contain;
+}
+
 .visual-skills,
 .visual-other-projects {
   margin-top: clamp(82px, 11vw, 138px);
@@ -2466,6 +2567,21 @@ body {
 
   .home-intro-copy {
     padding-left: 22px;
+  }
+
+  .home-intro-inner {
+    gap: 42px;
+  }
+
+  .home-intro-visual {
+    width: calc(100% - 22px);
+    margin-left: 22px;
+    border-radius: 12px;
+    padding: 6px;
+  }
+
+  .home-intro-visual img {
+    border-radius: 7px;
   }
 
   .home-intro h1 {
@@ -2582,6 +2698,27 @@ body {
 
   .visual-step figcaption::before {
     left: 22px;
+  }
+
+  .visual-step .torque-image-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .visual-step .torque-image-grid img {
+    height: auto;
+  }
+
+  .visual-step .gearbox-image-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    border-radius: 10px;
+    padding: 12px;
+  }
+
+  .visual-step .gearbox-image-grid img {
+    height: auto;
   }
 
   .visual-skills,

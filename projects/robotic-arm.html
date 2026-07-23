@@ -16,7 +16,7 @@
     >
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Shaan Patel Portfolio">
-    <meta property="og:image" content="../assets/robotic-arm-dof.png">
+    <meta property="og:image" content="../assets/FrontLinkIso.png">
     <meta property="og:image:alt" content="CAD view of a 6-DOF robotic arm degree-of-freedom layout">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="6-DOF Robotic Arm Project Notes">
@@ -24,7 +24,7 @@
       name="twitter:description"
       content="Mechanical design project notes for an in-progress 6-DOF robotic arm."
     >
-    <meta name="twitter:image" content="../assets/robotic-arm-dof.png">
+    <meta name="twitter:image" content="../assets/FrontLinkIso.png">
     <meta name="twitter:image:alt" content="CAD view of a 6-DOF robotic arm degree-of-freedom layout">
     <link rel="stylesheet" href="../styles.css?v=20260710-1">
   </head>
@@ -90,34 +90,66 @@
           </figure>
         </article>
 
-        <article class="visual-step">
-          <figure>
-            <img
-              src="../assets/robotic-arm-calculations.png"
-              alt="Preliminary robotic arm calculation notes for geometry and joint torque direction"
-              loading="lazy"
-              decoding="async"
-            >
+        <article class="visual-step torque-calculations-step">
+          <h2>Torque Calculations</h2>
+          <figure class="torque-calculations-visual">
+            <div class="torque-image-grid" role="group" aria-label="Torque calculation image gallery">
+              <img
+                src="../assets/LayoutSketch.png"
+                alt="Preliminary robotic arm calculation notes for geometry and joint torque direction"
+                loading="lazy"
+                decoding="async"
+              >
+              <img
+                src="../assets/Calculations.png"
+                alt="Preliminary robotic arm calculation worksheet showing geometry and joint torque inputs"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
             <figcaption>
-              <h2>Torque calculations</h2>
-              <p>Preliminary calculations are being used to guide joint loading assumptions and drivetrain direction. They are early design inputs, not validated performance results. Calculations can be found at this <a href="https://docs.google.com/spreadsheets/d/1levbSlnXuszqrpdhDj6p4WWyz2x23Eg3GXdmPVdkNsU/edit?usp=sharing">Calculation Sheet</a></p>
+              <h2>Torque Calculation</h2>
+              <p>Preliminary calculations are being used to guide joint loading assumptions and drivetrain direction.
+                They are early design inputs, not validated performance results. Calculations can be found at this <a href="https://docs.google.com/spreadsheets/d/1levbSlnXuszqrpdhDj6p4WWyz2x23Eg3GXdmPVdkNsU/edit?usp=sharing">Calculation Sheet</a></p>
             </figcaption>
           </figure>
         </article>
 
-        <article class="visual-step">
-          <figure>
-            <img
-              src="../assets/cycloidal-disk.png"
-              alt="CAD model of a cycloidal disk used for robotic arm drivetrain exploration"
-              loading="lazy"
-              decoding="async"
-            >
+
+        <article class="visual-step gearbox-design-step">
+          <h2>Gearbox Design</h2>
+          <figure class="gearbox-design-visual">
+            <div class="gearbox-image-grid" role="group" aria-label="Gearbox design image gallery">
+              <img
+                src="../assets/Cyclodial Isometric.png"
+                alt="Isometric CAD view of the assembled cycloidal gearbox"
+                loading="lazy"
+                decoding="async"
+              >
+              <img
+                src="../assets/CyclodialCrossSectionLabeled.png"
+                alt="Labeled cross-section showing the cycloidal gearbox internal arrangement"
+                loading="lazy"
+                decoding="async"
+              >
+              <img
+                src="../assets/cycloidal-disk.png"
+                alt="CAD view of the lobed cycloidal disk"
+                loading="lazy"
+                decoding="async"
+              >
+              <img
+                src="../assets/CyclodialTopDownLabel.png"
+                alt="Front CAD view of the robotic arm lower-joint drivetrain packaging"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
             <figcaption>
               <h2>Gearbox Design</h2>
-              <p>A cycloidal drive is a compact gearbox that uses an eccentric, lobed disc to produce very high gear reduction with low backlash and high torque capacity. 
-                In a robot arm’s lower joints it handles the arm’s largest loads while providing precise, rigid positioning. 
-                The two cyclodials used in this design on joints 1 and 2 have a reduction ratio of 25:1 and 15:1. 
+              <p>A cycloidal drive is a compact gearbox that uses an eccentric, lobed disc to produce very high gear reduction with low backlash and high torque capacity.
+                In a robot arm’s lower joints it handles the arm’s largest loads while providing precise, rigid positioning.
+                The two cyclodials used in this design on joints 1 and 2 have a reduction ratio of 25:1 and 15:1.
                 They were both custom designed along and are going to be 3D printed.
                 However, new reduction methods are being explore for the entire arm </p>
             </figcaption>
