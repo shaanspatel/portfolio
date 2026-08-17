@@ -26,9 +26,9 @@
     >
     <meta name="twitter:image" content="../assets/FrontLinkIso.png">
     <meta name="twitter:image:alt" content="CAD view of a 6-DOF robotic arm degree-of-freedom layout">
-    <link rel="stylesheet" href="../styles.css?v=20260817-1">
+    <link rel="stylesheet" href="../styles.css?v=20260817-2">
   </head>
-  <body class="visual-project-page">
+  <body class="visual-project-page robotic-arm-page">
     <a class="skip-link" href="#project-content">Skip to project notes</a>
 
     <header class="visual-project-header">
@@ -36,12 +36,19 @@
         <a class="brand" href="../index.html" aria-label="Shaan Patel home">Shaan Patel</a>
         <a class="back-link" href="../index.html#projects">Back to project hub</a>
       </nav>
+    </header>
 
+    <main class="visual-project-main" id="project-content" tabindex="-1">
+      <section class="visual-project-lead" aria-labelledby="project-title">
       <div class="visual-project-title">
-        <h1>6-DOF Robotic Arm</h1>
+        <h1 id="project-title">6-DOF Robotic Arm</h1>
         <p class="visual-project-subtitle">Mechanical Design Phase</p>
-        <p class="visual-project-status">End-to-end robotic arm project currently in the mechanical design phase.</p>
       </div>
+
+      <section class="visual-project-intro" aria-label="Short project summary">
+        <p>This is an end-to-end robotic arm project in progress, with the current documented work focused on mechanical design: CAD layout, joint architecture, preliminary torque calculations, drivetrain exploration, and packaging.</p>
+        <p>Future phases include electronics, controls, fabrication, testing, and AI/ML integration after the mechanical baseline is more defined.</p>
+      </section>
 
       <figure class="visual-project-hero">
         <img
@@ -51,12 +58,6 @@
         >
         <figcaption>Current CAD layout reference for the in-progress 6-DOF arm architecture.</figcaption>
       </figure>
-    </header>
-
-    <main class="visual-project-main" id="project-content" tabindex="-1">
-      <section class="visual-project-intro" aria-label="Short project summary">
-        <p>This is an end-to-end robotic arm project in progress, with the current documented work focused on mechanical design: CAD layout, joint architecture, preliminary torque calculations, drivetrain exploration, and packaging.</p>
-        <p>Future phases include electronics, controls, fabrication, testing, and AI/ML integration after the mechanical baseline is more defined.</p>
       </section>
 
       <section class="visual-walkthrough" aria-label="Mechanical design visual walkthrough">
@@ -91,67 +92,85 @@
         </article>
 
         <article class="visual-step torque-calculations-step">
-          <figure class="torque-calculations-visual">
+          <div class="torque-calculations-visual">
             <div class="torque-image-grid" role="group" aria-label="Torque calculation image gallery">
-              <img
-                src="../assets/LayoutSketch.png"
-                alt="Preliminary robotic arm calculation notes for geometry and joint torque direction"
-                loading="lazy"
-                decoding="async"
-              >
-              <img
-                src="../assets/Calculations.png"
-                alt="Preliminary robotic arm calculation worksheet showing geometry and joint torque inputs"
-                loading="lazy"
-                decoding="async"
-              >
+              <figure class="gallery-item">
+                <img
+                  src="../assets/LayoutSketch.png"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                >
+                <figcaption>Preliminary arm geometry and joint-torque direction notes.</figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img
+                  src="../assets/Calculations.png"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                >
+                <figcaption>Preliminary worksheet for geometry and joint-torque inputs.</figcaption>
+              </figure>
             </div>
-            <figcaption>
+            <div class="visual-step-summary">
               <h2>Torque Calculation</h2>
               <p>Preliminary calculations are being used to guide joint loading assumptions and drivetrain direction.
                 They are early design inputs, not validated performance results. Calculations can be found at this <a href="https://docs.google.com/spreadsheets/d/1levbSlnXuszqrpdhDj6p4WWyz2x23Eg3GXdmPVdkNsU/edit?usp=sharing">Calculation Sheet</a></p>
-            </figcaption>
-          </figure>
+            </div>
+          </div>
         </article>
 
 
         <article class="visual-step gearbox-design-step">
-          <figure class="gearbox-design-visual">
+          <div class="gearbox-design-visual">
             <div class="gearbox-image-grid" role="group" aria-label="Gearbox design image gallery">
-              <img
-                src="../assets/Cyclodial Isometric.png"
-                alt="Isometric CAD view of the assembled cycloidal gearbox"
-                loading="lazy"
-                decoding="async"
-              >
-              <img
-                src="../assets/CyclodialCrossSectionLabeled.png"
-                alt="Labeled cross-section showing the cycloidal gearbox internal arrangement"
-                loading="lazy"
-                decoding="async"
-              >
-              <img
-                src="../assets/cycloidal-disk.png"
-                alt="CAD view of the lobed cycloidal disk"
-                loading="lazy"
-                decoding="async"
-              >
-              <img
-                src="../assets/CyclodialTopDownLabel.png"
-                alt="Front CAD view of the robotic arm lower-joint drivetrain packaging"
-                loading="lazy"
-                decoding="async"
-              >
+              <figure class="gallery-item">
+                <img
+                  src="../assets/Cyclodial Isometric.png"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                >
+                <figcaption>Isometric CAD view of the assembled cycloidal gearbox.</figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img
+                  src="../assets/CyclodialCrossSectionLabeled.png"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                >
+                <figcaption>Labeled cross-section of the current internal arrangement.</figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img
+                  src="../assets/cycloidal-disk.png"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                >
+                <figcaption>CAD view of the lobed cycloidal disk.</figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img
+                  src="../assets/CyclodialTopDownLabel.png"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                >
+                <figcaption>Front CAD view of the lower-joint drivetrain packaging.</figcaption>
+              </figure>
             </div>
-            <figcaption>
+            <div class="visual-step-summary">
               <h2>Gearbox Design</h2>
               <p>A cycloidal drive is a compact gearbox that uses an eccentric, lobed disc to produce very high gear reduction with low backlash and high torque capacity.
                 In a robot arm’s lower joints it handles the arm’s largest loads while providing precise, rigid positioning.
                 The two cyclodials used in this design on joints 1 and 2 have a reduction ratio of 25:1 and 15:1.
                 They were both custom designed along and are going to be 3D printed.
                 However, new reduction methods are being explore for the entire arm </p>
-            </figcaption>
-          </figure>
+            </div>
+          </div>
         </article>
       </section>
 
