@@ -530,7 +530,7 @@ footer a {
 }
 
 .visual-project-intro {
-  max-width: var(--measure);
+  width: 100%;
   margin: clamp(20px, 2.5vw, 30px) 0 clamp(28px, 3.5vw, 44px);
 }
 
@@ -539,10 +539,6 @@ footer a {
   color: var(--ink-soft);
   font-size: clamp(1rem, 1.25vw, 1.08rem);
   line-height: 1.58;
-}
-
-.visual-project-intro p + p {
-  margin-top: 0.85em;
 }
 
 .visual-walkthrough {
@@ -556,26 +552,9 @@ footer a {
 
 .visual-step figcaption {
   margin-top: 8px;
-}
-
-.visual-step h2 {
-  margin: 0;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: -0.015em;
-  line-height: 1.35;
-}
-
-.visual-step p {
-  max-width: 76ch;
-  margin: 4px 0 0;
   color: var(--muted);
-  font-size: 0.9rem;
-  line-height: 1.52;
-}
-
-.visual-step p a {
-  color: var(--ink);
+  font-size: 0.875rem;
+  line-height: 1.45;
 }
 
 .torque-image-grid,
@@ -597,53 +576,23 @@ footer a {
   line-height: 1.45;
 }
 
-.visual-step-summary {
-  margin-top: 20px;
-  border-top: 1px solid var(--line);
-  padding-top: 14px;
-}
-
 .lerobot-page .visual-project-hero {
   width: min(100%, 720px);
   margin-inline: auto;
 }
 
-.visual-skills,
 .visual-other-projects {
   margin-top: clamp(68px, 8vw, 104px);
   border-top: 1px solid var(--ink);
   padding-top: 20px;
 }
 
-.visual-skills h2,
 .visual-other-projects h2 {
   margin: 0 0 clamp(24px, 3vw, 38px);
   font-size: clamp(1.55rem, 2.5vw, 2rem);
   font-weight: 600;
   letter-spacing: -0.04em;
   line-height: 1.1;
-}
-
-.visual-skill-list {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin: 0;
-  border-top: 1px solid var(--line);
-  padding: 0;
-  list-style: none;
-}
-
-.visual-skill-list li {
-  min-width: 0;
-  padding: 13px 0;
-  border-bottom: 1px solid var(--line);
-  color: var(--ink-soft);
-  font-size: 0.92rem;
-}
-
-.visual-skill-list li:nth-child(3n + 2),
-.visual-skill-list li:nth-child(3n + 3) {
-  padding-left: clamp(16px, 3vw, 44px);
 }
 
 .visual-project-link-grid {
@@ -832,14 +781,6 @@ footer a {
   .torque-image-grid,
   .gearbox-image-grid {
     grid-template-columns: 1fr;
-  }
-
-  .visual-skill-list {
-    grid-template-columns: 1fr;
-  }
-
-  .visual-skill-list li:nth-child(n) {
-    padding-left: 0;
   }
 
   footer,
